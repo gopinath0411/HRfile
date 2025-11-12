@@ -634,8 +634,7 @@ export default function AppointmentLetterForm() {
       <div style={styles.container}>
         <div style={styles.mainCard}>
           <div style={styles.header}>
-            <h1 style={styles.headerTitle}><FileText size={32} /> Appointment Letter Generator - Chennai</h1>
-            <p style={styles.headerSubtitle}>Generate 3-Page appointment letters with Professional Tax Rs. 208/month &amp; Medical Allowance Rs. 1,250/month (if CTC &gt; 5,00,000) - Reference: SBA Info Solutions Format</p>
+            <h1 style={styles.headerTitle}><FileText size={32} /> Appointment Letter Generator</h1>
           </div>
 
           <div style={styles.formSection}>
