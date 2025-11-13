@@ -385,8 +385,9 @@ export default function AppointmentLetterForm() {
     body { font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 1.5; color: #000; margin: 0; padding: 0; }
     .page { page-break-after: always; min-height: 29.7cm; display: flex; flex-direction: column; }
     .page-one { page-break-after: always; min-height: 29.7cm; display: flex; flex-direction: column; }
-    .letterhead { height: 70px; border-bottom: 2px solid #000; display: flex; align-items: center; justify-content: center; color: #999; font-size: 11px; }
-    .footer { height: 70px; border-top: 2px solid #000; display: flex; align-items: center; justify-content: center; color: #999; font-size: 10px; margin-top: auto; }
+  .letterhead { height: 70px; border-bottom: none; display: flex; align-items: center; justify-content: center; color: #999; font-size: 11px; }
+  .page-one .letterhead, .page .letterhead { margin-top: 80px; }
+  .footer { height: 70px; border-top: none; display: flex; align-items: center; justify-content: center; color: #999; font-size: 10px; margin-top: auto; }
     .content { flex: 1; padding: 20px 0; }
     .date-section { display: flex; justify-content: space-between; margin-bottom: 15px; }
     p { margin: 8px 0; text-align: justify; }
@@ -402,7 +403,7 @@ export default function AppointmentLetterForm() {
 <body>
 
 <div class="page-one">
-  <div class="letterhead">[COMPANY LETTERHEAD - LOGO, ADDRESS, CONTACT INFO]</div>
+  <div class="letterhead"></div>
   
   <div class="content">
     <div class="date-section">
@@ -431,11 +432,11 @@ export default function AppointmentLetterForm() {
     <p>During your employment with the company, you will be governed by the Company's policies and rules regarding leave, provident fund, ESI, Gratuity etc as applicable.</p>
   </div>
   
-  <div class="footer">[COMPANY STAMP & FOOTER DETAILS]</div>
+  <div class="footer"></div>
 </div>
 
 <div class="page">
-  <div class="letterhead">[COMPANY LETTERHEAD - LOGO, ADDRESS, CONTACT INFO]</div>
+  <div class="letterhead"></div>
   
   <div class="content">
     <p><strong>Leave</strong> - ${getLeavePolicy()}</p>
@@ -461,7 +462,7 @@ export default function AppointmentLetterForm() {
 </div>
 
 <div class="page">
-  <div class="letterhead">[COMPANY LETTERHEAD - LOGO, ADDRESS, CONTACT INFO]</div>
+  <div class="letterhead"></div>
   
   <div class="content">
     ${renderAnnexureA(ctcDetails)}
@@ -492,8 +493,9 @@ export default function AppointmentLetterForm() {
     body { font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 1.5; color: #000; }
     .page { page-break-after: always; min-height: 29.7cm; display: flex; flex-direction: column; }
     .page-one { page-break-after: always; min-height: 29.7cm; display: flex; flex-direction: column; }
-    .letterhead { height: 70px; border-bottom: 2px solid #000; display: flex; align-items: center; justify-content: center; color: #999; font-size: 11px; }
-    .footer { height: 70px; border-top: 2px solid #000; display: flex; align-items: center; justify-content: center; color: #999; font-size: 10px; margin-top: auto; }
+  .letterhead { height: 70px; border-bottom: none; display: flex; align-items: center; justify-content: center; color: #999; font-size: 11px; }
+  .page-one .letterhead, .page .letterhead { margin-top: 80px; }
+  .footer { height: 70px; border-top: none; display: flex; align-items: center; justify-content: center; color: #999; font-size: 10px; margin-top: auto; }
     .content { flex: 1; padding: 20px 0; }
     .date-section { display: flex; justify-content: space-between; margin-bottom: 15px; }
     p { margin: 8px 0; text-align: justify; }
@@ -511,7 +513,7 @@ export default function AppointmentLetterForm() {
 <body>
 
 <div class="page-one">
-  <div class="letterhead">[COMPANY LETTERHEAD - LOGO, ADDRESS, CONTACT INFO]</div>
+  <div class="letterhead"></div>
   
   <div class="content">
     <div class="date-section">
@@ -540,11 +542,11 @@ export default function AppointmentLetterForm() {
     <p>During your employment with the company, you will be governed by the Company's policies and rules regarding leave, provident fund, ESI, Gratuity etc as applicable.</p>
   </div>
   
-  <div class="footer">[COMPANY STAMP & FOOTER DETAILS]</div>
+  <div class="footer"></div>
 </div>
 
 <div class="page">
-  <div class="letterhead">[COMPANY LETTERHEAD - LOGO, ADDRESS, CONTACT INFO]</div>
+  <div class="letterhead"></div>
   
   <div class="content">
     <p><strong>Leave</strong> - ${getLeavePolicy()}</p>
@@ -570,7 +572,7 @@ export default function AppointmentLetterForm() {
 </div>
 
 <div class="page">
-  <div class="letterhead">[COMPANY LETTERHEAD - LOGO, ADDRESS, CONTACT INFO]</div>
+  <div class="letterhead"></div>
   
   <div class="content">
     ${renderAnnexureA(ctcDetails)}
