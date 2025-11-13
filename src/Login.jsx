@@ -14,7 +14,7 @@ function LoginPage({ onLogin }) {
     setIsLoading(true);
 
     setTimeout(() => {
-      if (username === 'admin' && password === 'admin0987'|| username === 'careers' && password === 'careers5500') {
+      if (username === 'Sbahrms' && password === 'Hrms12345'|| username === 'careers' && password === 'careers5500') {
         window.location.href = "/forms"
       } else {
         setError('Invalid username or password');
